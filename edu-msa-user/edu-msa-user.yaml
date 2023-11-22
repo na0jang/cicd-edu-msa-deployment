@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: edu-msa-user
+  labels:
+    app: user-msa  
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: user-msa
+  template:
+    metadata:
+      labels:
+        app: user-msa
+    spec:
+      containers:
+      - name: user-msa
+        image: nayoungjang/cicd-edu-msa-user:{BUILD NUMBER}
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 28084            
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: edu-msa-user
+  labels:
+    app: user-msa  
+spec:
+  ports:
+  - nodePort: 33401
+    port: 28084
+    protocol: TCP
+    targetPort: 28084
+  selector:
+    app: user-msa
+  type: NodePort
