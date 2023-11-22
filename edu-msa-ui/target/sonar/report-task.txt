@@ -1,0 +1,6 @@
+projectKey=edu-msa-ui
+serverUrl=http://115.68.198.240:31106
+serverVersion=10.3.0.82913
+dashboardUrl=http://115.68.198.240:31106/dashboard?id=edu-msa-ui
+ceTaskId=AYv11E6P5LvJbPuvJwLQ
+ceTaskUrl=http://115.68.198.240:31106/api/ce/task?id=AYv11E6P5LvJbPuvJwLQ
