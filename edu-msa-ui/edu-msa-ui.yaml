@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: ui-msa
-        image: nayoungjang/cicd-edu-msa-ui:53
+        image: nayoungjang/cicd-edu-msa-ui:21
         imagePullPolicy: Always
         ports:
         - containerPort: 28080           
