@@ -29,7 +29,7 @@ metadata:
     app: board-msa  
 spec:
   ports:
-  - nodePort: 33201
+  - nodePort: 32201
     port: 28082
     protocol: TCP
     targetPort: 28082
