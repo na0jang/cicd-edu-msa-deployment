@@ -29,7 +29,7 @@ metadata:
     app: user-msa  
 spec:
   ports:
-  - nodePort: 33401
+  - nodePort: 32401
     port: 28084
     protocol: TCP
     targetPort: 28084
