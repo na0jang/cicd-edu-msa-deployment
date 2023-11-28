@@ -29,7 +29,7 @@ metadata:
     app: ui-msa  
 spec:
   ports:
-  - nodePort: 33001
+  - nodePort: 32001
     port: 28080
     protocol: TCP
     targetPort: 28080
